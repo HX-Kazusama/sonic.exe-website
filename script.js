@@ -193,7 +193,7 @@ document.head.appendChild(style);
     tailsdoll: 303867, chaotix: 303868, lordx: 303870, majin: 303871,
     rerun: 303872, needlemouse: 303873, sanic: 303875, omw: 303876,
     soink: 303880, ugly: 303881, devoid: 303883, sunky: 303884,
-    fatal: 303885, starved: 303886, educator: 303887, sonichu: 303889,
+    fatal: 303885, starved: 303886, educator: 303887,
     coldsteel: 303890, genesys: 303891, fileextensions: 303892,
     demogri: 303893, scorched: 303894, secondary: 303895, exe: 303896,
     bratwurst: 303897, crazy: 303898, sega: 303899, norings: 303901,
