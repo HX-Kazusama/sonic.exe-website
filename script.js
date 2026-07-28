@@ -1,5 +1,5 @@
-window.onbeforeunload = () => window.scrollTo(0, 0);
 history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
 
 
 (function() {
