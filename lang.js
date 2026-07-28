@@ -254,7 +254,7 @@ const LANGS = {
       sunky: { title: "Chapga, tepaga, pastga... o'ngga?", desc: "Sunky ni toping va mag'lub eting" },
       fatal: { title: "FATAL Tajriba", desc: "Fatal Error ga o'yiningizga kirishga ruxsat bering" },
       starved: { title: "So'nggi ovqat", desc: "Starved Eggman ni toping va mag'lub eting" },
-      crazy: { title: "SEN SONIC EMASSAN", desc: "Psycho Tails ni mag'lub eting" },
+      crazy: { title: "SEN SONIK EMASSAN", desc: "Psycho Tails ni mag'lub eting" },
       coldsteel: { title: "shaxsiy xusumat yo'q bolakay", desc: "Coldsteel ni toping va mag'lub eting" },
       genesys: { title: "BF O'TDI", desc: "Genesys Eggman ni toping va mag'lub eting" },
       educator: { title: "Mening maktabimga xush kelibsiz!", desc: "Educator ni toping va mag'lub eting" },
