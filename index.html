@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <title>Sonic.EXE Unofficial</title>
+  <link rel="icon" type="image/png" href="icono.png" />
+  <link rel="shortcut icon" type="image/png" href="icono.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="warningScreen">
+    <div id="warningBox">
+      <div id="warningTitle">WARNING!</div>
+      <p id="warningLine1">This mod is not for children or those who are easily disturbed.</p>
+      <p id="warningLine2">This mod contains flashing lights and/or imagery that may cause discomfort and/or seizures for those with photosensitive epilepsy.</p>
+      <p id="warningQuestion">WOULD YOU LIKE TO PROCEED ANYWAY?</p>
+      <div id="warningBtns">
+        <button id="warnYes">YES</button>
+        <button id="warnNo">NO</button>
+      </div>
+    </div>
+  </div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">SONIC.EXE <span class="red">UNOFFICIAL</span></span>
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#download">DOWNLOAD</a></li>
+        <li><a href="#gallery">ACHIEVEMENTS</a></li>
+        <li><a href="#updates">UPDATES</a></li>
+        <li><a href="#comments">COMMENTS</a></li>
+        <li><a href="#credits">CREDITS</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home"     onclick="closeMenu()">HOME</a>
+    <a href="#about"    onclick="closeMenu()">ABOUT</a>
+    <a href="#gallery"  onclick="closeMenu()">GALLERY</a>
+    <a href="#download" onclick="closeMenu()">DOWNLOAD</a>
+    <a href="#credits"  onclick="closeMenu()">CREDITS</a>
+  </div>
+
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="scanlines"></div>
+    <div class="hero-content">
+      <div class="logo-stack">
+        <img class="logo-ring"    src="sprites/title/logo/ring.webp"    alt="" />
+        <img class="logo-sonic"   src="sprites/title/logo/sonic.webp"   alt="" />
+        <img class="logo-bandana" src="sprites/title/logo/bandana.webp" alt="" />
+        <img class="logo-eyes"    src="sprites/title/logo/eyes.webp"    alt="" />
+      </div>
+      <p class="hero-sub"> READY FOR ROUND 3?</p>
+      <div class="hero-btns">
+        <a href="#download" class="btn btn-red">DOWNLOAD</a>
+        <a href="#gallery"  class="btn btn-outline">ACHIEVEMENTS</a>
+      </div>
+    </div>
+    <div class="hero-spikes">
+      <img src="sprites/title/spikesdown.webp" alt="" />
+    </div>
+    <div class="scroll-hint">▼</div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <div class="section-inner">
+      <h2 class="section-title">ABOUT THE MOD</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Ready to play once again...?
+          </p>
+          <p>
+            <strong>Friday Night Funkin': Vs Sonic.EXE (Unofficial)</strong> is a fan-made revival inspired by the iconic 2021 <span class="red">Vs. Sonic.EXE</span> mod. Built to recapture the original's dark atmosphere and nostalgia, this project brings back part of the cancelled content with new reimaginations of its story, songs, and characters.
+          </p>
+          <p>
+            With eerie encounters, revamped visuals, and reimagined tracks, <strong>Vs Sonic.EXE (Unofficial)</strong> aims to deliver both a nostalgic and fresh experience for fans of the original mod.
+          </p>
+          <ul class="about-features">
+            <li>50+ remade songs</li>
+            <li>20+ playable characters / opponents</li>
+            <li>Full achievement system with GameJolt trophies</li>
+            <li>Unique art &amp; animations for every character</li>
+            <li>Multilanguage support</li>
+          </ul>
+        </div>
+        <div class="about-img">
+          <div class="about-slideshow">
+            <img id="aboutSlide" src="slidfes/fnfpe-rudm-screenshot-1779575905-8dyczabu.png" alt="Sonic.EXE Unofficial gameplay" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="songs" style="display:none">
+    <div class="section-inner">
+      <p></p>
+      <div class="songs-grid">
+        <div class="song-card"><img src="../assets/exe/cover/yourself.webp"                                alt="Yourself"           /><span>YOURSELF</span></div>
+        <div class="song-card"><img src="../assets/exe/cover/too-slow.webp"                                alt="Too Slow"           /><span>TOO SLOW</span></div>
+        <div class="song-card"><img src="../assets/exe/cover/you-cant-run.webp"                            alt="You Can't Run"      /><span>YOU CAN'T RUN</span></div>
+        <div class="song-card"><img src="../assets/exe/cover/triple-trouble.webp"                          alt="Triple Trouble"     /><span>TRIPLE TROUBLE</span></div>
+        <div class="song-card"><img src="../assets/exe/cover/final-escape.webp"                            alt="Final Escape"       /><span>FINAL ESCAPE</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/faker.webp"                   alt="Faker"              /><span>FAKER</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/black-sun.webp"               alt="Black Sun"          /><span>BLACK SUN</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/godspeed.webp"                alt="Godspeed"           /><span>GODSPEED</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/cycles.webp"                  alt="Cycles"             /><span>CYCLES</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/hellbent.webp"                alt="Hellbent"           /><span>HELLBENT</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/fate.webp"                    alt="Fate"               /><span>FATE</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/gotta-go.webp"                alt="Gotta Go"           /><span>GOTTA GO</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/endless-us.webp"              alt="Endless"            /><span>ENDLESS</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/endless-jp.webp"              alt="Endless JP"         /><span>ENDLESS JP</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/sunshine.webp"                alt="Sunshine"           /><span>SUNSHINE</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/soulless.webp"                alt="Soulless"           /><span>SOULLESS</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/chaos.webp"                   alt="Chaos"              /><span>CHAOS</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/too-fest.webp"                alt="Too Fest"           /><span>TOO FEST</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/round-a-bout.webp"            alt="Round a Bout"       /><span>ROUND-A-BOUT</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/her-world.webp"               alt="Her World"          /><span>HER WORLD</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/starline.webp"                alt="Starline"           /><span>STARLINE</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/life-and-death.webp"          alt="Life and Death"     /><span>LIFE &amp; DEATH</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/uh-oh.webp"                   alt="Uh Oh"              /><span>UH OH</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/haze.webp"                    alt="Haze"               /><span>HAZE</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/hedge.webp"                   alt="Hedge"              /><span>HEDGE</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/manual-blast.webp"            alt="Manual Blast"       /><span>MANUAL BLAST</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/longstrider.webp"             alt="Longstrider"        /><span>LONGSTRIDER</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/universal-collapse.webp"      alt="Universal Collapse" /><span>UNIVERSAL COLLAPSE</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/hollow.webp"                  alt="Hollow"             /><span>HOLLOW</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/hijacked-transmission.webp"   alt="Hijacked TX"        /><span>HIJACKED TX.</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/flash.webp"                   alt="Flash"              /><span>FLASH</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/pre-design.webp"              alt="Pre-Design"         /><span>PRE-DESIGN</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/vanilla-milk.webp"            alt="Vanilla Milk"       /><span>VANILLA MILK</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/chocolate-milk.webp"          alt="Chocolate Milk"     /><span>CHOCOLATE MILK</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/fatality.webp"                alt="Fatality"           /><span>FATALITY</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/prey.webp"                    alt="Prey"               /><span>PREY</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/fight-or-flight.webp"         alt="Fight or Flight"    /><span>FIGHT OR FLIGHT</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/mania.webp"                   alt="Mania"              /><span>MANIA</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/personel.webp"                alt="Personel"           /><span>PERSONEL</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/burning.webp"                 alt="Burning"            /><span>BURNING</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/malediction.webp"             alt="Malediction"        /><span>MALEDICTION</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/shocker.webp"                 alt="Shocker"            /><span>SHOCKER</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/b4cksl4sh.webp"               alt="B4cksl4sh"          /><span>B4CKL4SH</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/monochromatic.webp"           alt="Monochromatic"      /><span>MONOCHROMATIC</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/found-you.webp"               alt="Found You"          /><span>FOUND YOU</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/forestall-desire.webp"        alt="Forestall Desire"   /><span>FORESTALL DESIRE</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/deception.webp"               alt="Deception"          /><span>DECEPTION</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/sharpy-showdown.webp"         alt="Sharpy Showdown"    /><span>SHARPY SHOWDOWN</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/substantial.webp"             alt="Substantial"        /><span>SUBSTANTIAL</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/digitalized.webp"             alt="Digitalized"        /><span>DIGITALIZED</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/fakebaby.webp"                alt="Fakebaby"           /><span>FAKEBABY</span></div>
+        <div class="song-card"><img src="../assets/exe/freeplayassets/covers/miasma.webp"                  alt="Miasma"             /><span>MIASMA</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="section download-section">
+    <div class="section-inner">
+      <h2 class="section-title">DOWNLOAD</h2>
+      <p class="section-sub">Available now</p>
+      <div class="dl-cards">
+        <a href="https://gamejolt.com/games/sonicexeunofficial/1055030" class="dl-card" target="_blank" rel="noopener">
+          <div class="dl-icon">
+            <svg width="36" height="36" viewBox="0 0 11 9" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated;display:block">
+              <rect x="1" y="3" width="9" height="5" fill="#cc0000"/>
+              <rect x="0" y="4" width="1" height="3" fill="#cc0000"/>
+              <rect x="10" y="4" width="1" height="3" fill="#cc0000"/>
+              <rect x="2" y="2" width="3" height="1" fill="#aa0000"/>
+              <rect x="6" y="2" width="3" height="1" fill="#aa0000"/>
+              <rect x="2" y="4" width="1" height="3" fill="#1a0000"/>
+              <rect x="1" y="5" width="3" height="1" fill="#1a0000"/>
+              <rect x="7" y="4" width="1" height="1" fill="#ff4444"/>
+              <rect x="8" y="5" width="1" height="1" fill="#ff4444"/>
+              <rect x="7" y="6" width="1" height="1" fill="#ff4444"/>
+              <rect x="6" y="5" width="1" height="1" fill="#ff4444"/>
+              <rect x="5" y="5" width="1" height="1" fill="#880000"/>
+            </svg>
+          </div>
+          <div class="dl-info">
+            <strong>GAMEJOLT</strong>
+            <span>Play &amp; earn trophies</span>
+          </div>
+        </a>
+      </div>
+      <p class="dl-note">This mod is a fan-made project and is not affiliated with SEGA or the original Sonic.EXE Team.</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="section gallery-section">
+    <div class="section-inner">
+      <button class="accordion-btn" data-target="achieveBody">
+        <span>ACHIEVEMENTS</span><span class="accordion-arrow">▼</span>
+      </button>
+      <div class="accordion-body" id="achieveBody">
+        <div id="gjPanel">
+          <div id="gjLogin">
+            <p class="section-sub">Connect your GameJolt account to see your progress</p>
+            <div id="gjForm">
+              <input id="gjUsername" type="text" placeholder="GameJolt Username" autocomplete="off" spellcheck="false" />
+              <input id="gjToken"    type="password" placeholder="GameJolt Token" autocomplete="off" />
+              <button id="gjSubmit">CONNECT</button>
+            </div>
+            <p id="gjHelp">Get your token at <span class="red">gamejolt.com → Profile Menu → Game Token</span></p>
+          </div>
+          <div id="gjConnected" style="display:none">
+            <span id="gjUser"></span>
+            <button id="gjLogout">DISCONNECT</button>
+          </div>
+          <p id="gjStatus"></p>
+        </div>
+        <p class="section-sub" style="margin-top:24px">Can you unlock them all?</p>
+        <div class="char-grid" id="achieveGrid">
+          <div class="char-card" data-id="xeno"><img src="sprites/achievements/xeno.webp"           alt="GOD KILLER"                  /><span>GOD KILLER</span><small>Beat the Main Week</small></div>
+          <div class="char-card" data-id="lordx"><img src="sprites/achievements/lordx.webp"          alt="DON'T COME BACK"             /><span>DON'T COME BACK</span><small>Find and beat Lord X</small></div>
+          <div class="char-card" data-id="majin"><img src="sprites/achievements/majin.webp"          alt="FUN WAS INFINITE"            /><span>FUN WAS INFINITE</span><small>Find and beat Majin and Mazin</small></div>
+          <div class="char-card" data-id="tailsdoll"><img src="sprites/achievements/tailsdoll.webp"      alt="Did you feel the sunshine?"  /><span>Did you feel the sunshine?</span><small>Find and beat Tails Doll</small></div>
+          <div class="char-card" data-id="fleetway"><img src="sprites/achievements/fleetway.webp"       alt="Chaos Controlled!"           /><span>Chaos Controlled!</span><small>Find and beat Fleetway</small></div>
+          <div class="char-card" data-id="exe"><img src="sprites/achievements/exe.webp"            alt="Back in the cage you go!"    /><span>Back in the cage you go!</span><small>Find and beat EXE</small></div>
+          <div class="char-card" data-id="sanic"><img src="sprites/achievements/sanic.webp"          alt="Would you do it all again?"  /><span>Would you do it all again?</span><small>Find and beat Sanic</small></div>
+          <div class="char-card" data-id="needlemouse"><img src="sprites/achievements/needlemouse.webp"    alt="Could you repeat that?"      /><span>Could you repeat that?</span><small>Find and beat Needlemouse</small></div>
+          <div class="char-card" data-id="chaotix"><img src="sprites/achievements/chaotix.webp"        alt="It wasn't Tails..."          /><span>It wasn't Tails...</span><small>Find and beat Chaotix</small></div>
+          <div class="char-card" data-id="scorched"><img src="sprites/achievements/scorched.webp"       alt="He was replaced"             /><span>He was replaced</span><small>Find and beat Scorched</small></div>
+          <div class="char-card" data-id="demogri"><img src="sprites/achievements/demogri.webp"        alt="Uh Oh!"                      /><span>Uh Oh!</span><small>Find and beat Demogri &amp; Griatos</small></div>
+          <div class="char-card" data-id="bratwurst"><img src="sprites/achievements/bratwurst.webp"      alt="Where's the bonus fight?"    /><span>Where's the bonus fight?</span><small>Find and beat Bratwurst</small></div>
+          <div class="char-card" data-id="omw"><img src="sprites/achievements/omw.webp"            alt="Do You Know Da Wae?"         /><span>Do You Know Da Wae?</span><small>Find and beat OMW.EXE</small></div>
+          <div class="char-card" data-id="devoid"><img src="sprites/achievements/devoid.webp"         alt="The hedgehog of the night."  /><span>The hedgehog of the night.</span><small>Find and beat Devoid</small></div>
+          <div class="char-card" data-id="rerun"><img src="sprites/achievements/rerun.webp"          alt="Like the FNF Mod?!"          /><span>Like the FNF Mod?!</span><small>Find and beat Re-Run</small></div>
+          <div class="char-card" data-id="soink"><img src="sprites/achievements/soink.webp"          alt="Adobe please..."             /><span>Adobe please...</span><small>Find and beat Soink.FLA</small></div>
+          <div class="char-card" data-id="ugly"><img src="sprites/achievements/ugly.webp"           alt="Uh... ¿Meow?"                /><span>Uh... ¿Meow?</span><small>Find and beat Movie Sonic</small></div>
+          <div class="char-card" data-id="sunky"><img src="sprites/achievements/sunky.webp"          alt="Left, up, down... right?"    /><span>Left, up, down... right?</span><small>Find and beat Sunky</small></div>
+          <div class="char-card" data-id="fatal"><img src="sprites/achievements/fatal.webp"          alt="A FATAL Experience"          /><span>A FATAL Experience</span><small>Grant Fatal Error access to your game</small></div>
+          <div class="char-card" data-id="starved"><img src="sprites/achievements/starved.webp"        alt="One last meal"               /><span>One last meal</span><small>Find and beat Starved Eggman</small></div>
+          <div class="char-card" data-id="crazy"><img src="sprites/achievements/crazy.webp"          alt="YOU WEREN'T SONIC"           /><span>YOU WEREN'T SONIC</span><small>Beat Psycho Tails</small></div>
+          <div class="char-card" data-id="coldsteel"><img src="sprites/achievements/coldsteel.webp"      alt="Psssssst, nothing personel kid" /><span>nothing personel kid</span><small>Find and beat Coldsteel</small></div>
+          <div class="char-card" data-id="genesys"><img src="sprites/achievements/genesys.webp"        alt="BF HAS PASSED"               /><span>BF HAS PASSED</span><small>Find and beat Genesys Eggman</small></div>
+          <div class="char-card" data-id="educator"><img src="sprites/achievements/educator.webp"       alt="Welcome to my SchoolHouse!"  /><span>Welcome to my SchoolHouse!</span><small>Find and beat Educator</small></div>
+          <div class="char-card" data-id="sonichu"><img src="sprites/achievements/sonichu.webp"        alt="Zap to the extreme!"         /><span>Zap to the extreme!</span><small>Find and beat Sonichu</small></div>
+          <div class="char-card" data-id="fileextensions"><img src="sprites/achievements/fileextensions.webp" alt="TOO MANY SONICS"             /><span>TOO MANY SONICS</span><small>Defeat all File Extensions characters</small></div>
+          <div class="char-card" data-id="rings"><img src="sprites/achievements/rings.webp"          alt="Allergic to Rings"           /><span>Allergic to Rings</span><small>Beat Triple Trouble without collecting any ring</small></div>
+          <div class="char-card" data-id="norings"><img src="sprites/achievements/norings.webp"        alt="I Show Speed!"               /><span>I Show Speed!</span><small>Beat Manual Blast without pressing any ring</small></div>
+          <div class="char-card" data-id="tripledeaths"><img src="sprites/achievements/tripledeaths.webp"   alt="Some Trouble Going Forward?" /><span>Some Trouble Going Forward?</span><small>Check all Triple Trouble deaths</small></div>
+          <div class="char-card" data-id="dagarden"><img src="sprites/achievements/dagarden.webp"       alt="MUSIC ENJOYER!"              /><span>MUSIC ENJOYER!</span><small>Complete the DA Garden Song Library</small></div>
+          <div class="char-card" data-id="parallax"><img src="sprites/achievements/parallax.webp"       alt="The other side of the ring"  /><span>The other side of the ring</span><small>Enter the PARALLAX Menu</small></div>
+          <div class="char-card" data-id="secondary"><img src="sprites/achievements/secondary.webp"      alt="The hell is happening..."    /><span>The hell is happening...</span><small>Find all secondary codes</small></div>
+          <div class="char-card" data-id="sega"><img src="sprites/achievements/sega.webp"           alt="MESSAGE RECEIVED"            /><span>MESSAGE RECEIVED</span><small>Get a Notification from SEGA Enterprise</small></div>
+          <div class="char-card" data-id="popup"><img src="sprites/achievements/popup.webp"          alt="HAVE SOME ORGANIZATION PLEASE!" /><span>HAVE SOME ORGANIZATION!</span><small>Beat Fatality without closing any pop-up</small></div>
+          <div class="char-card" data-id="super"><img src="sprites/achievements/super.webp"          alt="Super Player!"               /><span>Super Player!</span><small>Get A or higher rank in 5 songs</small></div>
+          <div class="char-card" data-id="hyper"><img src="sprites/achievements/hyper.webp"          alt="Hyper Player!!"              /><span>Hyper Player!!</span><small>Get a P rank in any song</small></div>
+          <div class="char-card" data-id="die"><img src="sprites/achievements/die.webp"            alt="You are just bad…"           /><span>You are just bad…</span><small>Get every game over</small></div>
+          <div class="char-card" data-id="credits"><img src="sprites/achievements/credits.webp"        alt="Source Investigator"         /><span>Source Investigator</span><small>Watch the mod credits</small></div>
+          <div class="char-card" data-id="finale"><img src="sprites/achievements/finale.webp"         alt="Wanna touch some grass?"     /><span>Wanna touch some grass?</span><small>Beat the entire mod</small></div>
+          <div class="char-card" data-id="locked"><img src="sprites/achievements/locked.webp"         alt="???"                         /><span>???</span><small>???</small></div>
+          <div class="char-card" data-id="locked"><img src="sprites/achievements/locked.webp"         alt="???"                         /><span>???</span><small>???</small></div>
+          <div class="char-card" data-id="locked"><img src="sprites/achievements/locked.webp"         alt="???"                         /><span>???</span><small>???</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="updates" class="section updates-section">
+    <div class="section-inner">
+      <button class="accordion-btn" data-target="updatesBody">
+        <span>UPDATES</span><span class="accordion-arrow">▼</span>
+      </button>
+      <div class="accordion-body" id="updatesBody">
+        <div class="updates-list">
+          <div class="update-card">
+            <img src="updates/udpate 1.5.webp" alt="Update 1.5" />
+            <div class="update-body">
+              <p>Our first post-launch update is planned to be <strong>Version 1.5</strong>, bringing the <strong>PARALLAX</strong> cast into the mod alongside the <strong>Christmas Special</strong> songs. We'd love to make this update a reality, and we're excited to continue expanding the experience with even more content.</p>
+            </div>
+          </div>
+          <div class="update-card">
+            <img src="updates/update 2.webp" alt="Update 2" />
+            <div class="update-body">
+              <p>Looking even further ahead, <strong>Version 2</strong> is shaping up to be our biggest and most ambitious update yet. It will continue the <strong>Story Mode</strong> campaign with its second chapter, <strong>Overthrow</strong>, where you'll play as <strong>Girlfriend</strong> after she is mysteriously teleported during the Triple Trouble cutscene. Follow her journey as she faces new threats, uncovers hidden truths, and experiences the story from an entirely different perspective. This update will also introduce the remaining members of the <strong>Sound Test</strong> and <strong>File Extensions</strong> cast. Alongside new songs, mechanics, and surprises, our goal is to deliver an experience unlike anything we've created before.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="comments" class="section comments-section">
+    <div class="section-inner">
+      <button class="accordion-btn" data-target="commentsBody">
+        <span>COMMENTS</span><span class="accordion-arrow">▼</span>
+      </button>
+      <div class="accordion-body" id="commentsBody">
+        <p class="section-sub" style="margin-top:24px">Leave a message — it'll appear in our Discord</p>
+        <div id="commentForm">
+          <input  id="cmtName"  type="text"  placeholder="Your name"     maxlength="80"   autocomplete="off" spellcheck="false" />
+          <textarea id="cmtMsg"              placeholder="Your comment..." maxlength="1000" rows="4" spellcheck="false"></textarea>
+          <button id="cmtSubmit">SEND</button>
+          <p id="cmtStatus"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="credits" class="section credits-section">
+    <div class="section-inner">
+      <button class="accordion-btn" data-target="creditsBody">
+        <span>CREDITS</span><span class="accordion-arrow">▼</span>
+      </button>
+      <div class="accordion-body" id="creditsBody">
+        <p class="section-sub" style="margin-top:24px">The team behind the mod</p>
+        <div class="credits-grid" id="creditsGrid">
+</div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-title">SONIC.EXE <span class="red">UNOFFICIAL</span></p>
+      <p class="footer-legal">Fan-made FNF mod. Not affiliated with SEGA nor the Original Sonic.exe Team.</p>
+      <p class="footer-legal">Sonic the Hedgehog &copy; SEGA. Friday Night Funkin' &copy; The Funkin' Crew.</p>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
