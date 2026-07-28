@@ -268,9 +268,11 @@ function applyLang(code) {
   const ml = document.querySelectorAll('.mobile-menu a');
   ml[0].textContent = L.mobileMenu.home;
   ml[1].textContent = L.mobileMenu.about;
-  ml[2].textContent = L.mobileMenu.gallery;
-  ml[3].textContent = L.mobileMenu.download;
-  ml[4].textContent = L.mobileMenu.credits;
+  ml[2].textContent = L.mobileMenu.download;
+  ml[3].textContent = L.mobileMenu.achievements || L.nav.achievements;
+  ml[4].textContent = L.mobileMenu.updates || L.nav.updates;
+  if (ml[5]) ml[5].textContent = L.comments.title;
+  if (ml[6]) ml[6].textContent = L.mobileMenu.credits;
 
   document.querySelector('.hero-sub').textContent = L.hero.sub;
   const heroBtns = document.querySelectorAll('.hero-btns .btn');
