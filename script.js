@@ -318,7 +318,7 @@ document.head.appendChild(style);
     return (window.LANGS && window.LANGS[code] && window.LANGS[code].comments) || {
       errFields: 'Enter your name and a comment.',
       sending:   'Sending...',
-      ok:        'Comment sent! Check the Discord.',
+      ok:        'Comment sent!',
       errConn:   'Connection failed. Try again.',
     };
   }
