@@ -16,7 +16,7 @@ const LANGS = {
     achievementsList: {
       xeno: { title: "GOD KILLER", desc: "Beat the Main Week" },
       lordx: { title: "DON'T COME BACK", desc: "Find and beat Lord X" },
-      majin: { title: "FUN WAS INFINITE", desc: "Find and beat Majin and Mazin" },
+      majin: { title: "FUN IS INFINITE", desc: "Find and beat Majin and Mazin" },
       tailsdoll: { title: "Did you feel the sunshine?", desc: "Find and beat Tails Doll" },
       fleetway: { title: "Chaos Controlled!", desc: "Find and beat Fleetway" },
       exe: { title: "Back in the cage you go!", desc: "Find and beat EXE" },
@@ -480,7 +480,7 @@ const LANGS = {
       educator: { title: "Добро пожаловать в Школу!", desc: "Найди и победи Эдукатора" },
       fileextensions: { title: "СЛИШКОМ МНОГО СОНИКОВ", desc: "Победи всех персонажей File Extensions" },
       rings: { title: "Аллергия на кольца", desc: "Пройди Triple Trouble, не собрав ни одного кольца" },
-      norings: { title: "Я показываю скорость!", desc: "Пройди Manual Blast, не нажав ни на одно кольцо" },
+      norings: { title: "Я сама скорость!", desc: "Пройди Manual Blast, не нажав ни на одно кольцо" },
       tripledeaths: { title: "Возникли трудности?", desc: "Увидь все смерти в Triple Trouble" },
       dagarden: { title: "ЦЕНИТЕЛЬ МУЗЫКИ!", desc: "Заполни библиотеку песен в DA Garden" },
       parallax: { title: "По ту сторону кольца", desc: "Зайди в меню PARALLAX" },
@@ -621,7 +621,7 @@ const LANGS = {
     achievementsList: {
       xeno: { title: "GOD SCUTTLER", desc: "Survive th' Main Voyage" },
       lordx: { title: "STAY IN TH' DEPTHS", desc: "Find an' sink Lord X" },
-      majin: { title: "THE GROG WAS INFINITE", desc: "Find an' sink Majin and Mazin" },
+      majin: { title: "THE GROG BE INFINITE", desc: "Find an' sink Majin and Mazin" },
       tailsdoll: { title: "Did ye feel th' sunshine?", desc: "Find an' sink Tails Doll" },
       fleetway: { title: "Mutiny Controlled!", desc: "Find an' sink Fleetway" },
       exe: { title: "Back in th' brig ye go!", desc: "Find an' sink EXE" },
